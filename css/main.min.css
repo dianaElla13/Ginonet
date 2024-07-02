@@ -1,0 +1,284 @@
+
+body {
+    background-image:url(../images/fon.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 100%;
+    height:max-content;
+    margin: 44px 184px;
+    overflow: hidden;
+    color: #ffff; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+html {
+    min-height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+br {
+    display: none;
+}
+.head {
+    min-height: 85px;
+    margin-bottom: 35px;
+}
+.logo {
+    position: relative;
+    display: inline-block;
+}
+.logo div {
+    background-image:url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 385px;
+    height: 85px;
+}
+.email {
+    position: relative;
+    display: inline-block;
+    padding-left: 4%;
+    
+}
+.email div {
+    float: right;
+}
+.email-icon {
+    background-image:url(../images/email0.png);
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 43px;
+    
+}
+
+.email p {
+    display: inline-block;
+    padding: 0px 25px;
+    margin: 0;
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 43px;
+}
+.email div:hover .email-icon {
+    background-image:url(../images/email1.png);
+}
+.email div:hover p {
+    text-decoration: underline;
+}
+.domain, .form {
+    padding: 40px 0 0 0;
+}
+.domain p {
+    margin:0;
+}
+.domain .white-bold, .form .white-bold {
+    font-size: 21px;
+}
+.usual-text {
+    font-weight: lighter;
+}
+
+.form .input {
+    border: 1px solid #666666;
+    background-color: #2D2D2D;
+    outline: none;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 8px 10px;
+    color: #ffff;
+}
+.form .input-text::placeholder {
+    color: #666666;
+}
+.input-email {
+    border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    -khtml-border-radius: 0px 3px 3px 0px;
+    width: 367px;
+}
+.input-text {
+    width: 108px;
+    border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    -khtml-border-radius: 3px 0px 0px 3px;   
+}
+.button {
+    background-color: #F4672F;
+    color: #ffff;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    -khtml-border-radius: 6px;
+    width: 181px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.button:hover, .button:active, .button:focus {
+    background-color: #Ffff;
+    color: #F4672F;
+}
+.last-block {
+    margin-bottom: 44px;
+}
+.telegram {
+    margin: 29px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.orange-plain {
+    background-image: url(../images/orange-plain-default.png);
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+}
+.orange-plain:hover, .telegram ul li:hover .orange-plain  {
+    background-image: url(../images/orange-plain-variant.png);
+}
+.transparent-plain {
+    background-image: url(../images/transparent-plain-default.png);
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+}
+.transparent-plain:hover, .telegram ul li:hover .transparent-plain {
+    background-image: url(../images/transparent-plain-variant.png);
+}
+.telegram ul a:hover p {
+    text-decoration: underline;
+}
+.telegram li {
+margin: 16px 0px;
+}
+.telegram p {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 45px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.rewiev {
+    width:44%;
+    display: inline-block;
+    position:relative;
+    float: right;
+}
+.conteiner {
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid #F4672F;
+    height: 399px;
+    overflow-y: visible;
+    margin-bottom: 44px;
+}
+@media  screen and (max-width: 1440px) {
+    body {
+        background-image: url(../images/fon-1440.png);
+        margin: 44px 110px;
+    }
+}
+
+@media  screen and (max-width: 1024px) {
+    body {
+        background-image: url(../images/fon-1024.png);
+        margin: 44px 56px;
+    }
+    .logo div {
+        width: 324px;
+        height: 72px;
+    }
+    .email {
+        padding-left: 3%;      
+    }
+    .email p {
+        padding: 0px 15px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    body {
+        background-image: url(../images/fon-736.png);
+        margin: 44px 45px;
+        overflow: auto;
+    }
+    br {
+            display: initial;
+        }
+    .logo {
+        margin-right: 3%;
+    }
+    .email {
+        margin-top:50px;
+        padding-left: 0;
+    }
+    .input-text {
+                      width: 104px;
+                  }
+    .input-email {
+            width: 221px;
+        }
+    .rewiev {
+            width: 100%;
+            float: center;
+        }
+    .conteiner {
+        height: 788px;
+    }
+    
+}
+
+@media  screen and (max-width: 524px) {
+    body {
+        background-image: url(../images/fon-390.png);
+        margin: 44px 32px;
+    }
+    .head {
+            height: auto;
+        }
+    .input-text {
+                    width: 94px;
+                }
+        .input-email {
+            width: 169px;
+        }
+}
+@media  screen and (max-width: 390px) {
+    body {
+        margin: 44px 20px;
+        font-size: 16px;
+    }
+    .logo div {
+        width: 304px;
+        height: 67px;
+    }
+    .domain .white-bold, .form .white-bold {
+        font-size: 19px;
+    }
+}
